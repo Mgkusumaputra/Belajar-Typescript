@@ -13,3 +13,9 @@ let level;                      /* If we declare a variable and dont initialize 
 function render(document) {
     console.log(document);      /* Implicity = we haven't explicity or clearly set the type of the parameter */
 }
+
+
+// Arrays
+
+let numbers: number[] = [];
+// numbers.forEach(n => n.)     /* Intellisense */
