@@ -26,3 +26,16 @@ let numbers: number[] = [];
 
  // 1, 'Mosh'
 let user: [number, string, boolean, number] = [1, "Mosh", true, 0];
+
+
+
+// Enums
+
+// const small = 1;
+// const medium = 2;
+// const large = 3;        /* Not using enum */
+
+/* enum using PascalCase */
+const enum Size { Small = 1, Medium, Large }      /* By default first member value will be set to 0. If we define the value with string, we must set a value for each member.*/
+let mySize: Size = Size.Medium;
+console.log(mySize);        /* if we define enum using const compiler will generated more optimize code  */
