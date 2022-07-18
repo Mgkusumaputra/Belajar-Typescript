@@ -10,12 +10,19 @@ let course = "Typescript";
 let is_published = true;
 let level;                      /* If we declare a variable and dont initialize it, the typescript compiler assumes this variable is of type any */
 
-function render(document) {
-    console.log(document);      /* Implicity = we haven't explicity or clearly set the type of the parameter */
-}
+// function render(document) {
+//     console.log(document);      /* Implicity = we haven't explicity or clearly set the type of the parameter */
+// }
 
 
 // Arrays
 
 let numbers: number[] = [];
 // numbers.forEach(n => n.)     /* Intellisense */
+
+
+
+// Tuples
+
+ // 1, 'Mosh'
+let user: [number, string, boolean, number] = [1, "Mosh", true, 0];
