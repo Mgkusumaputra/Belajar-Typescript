@@ -71,3 +71,18 @@ let employee: Employee = {
         console.log(date);
     }
 };            // Cannot define name with null or undefined. Set it to optional or use empty string
+
+
+
+// Union Types
+
+function kgToLbs(weight: number | string): number {
+    // Narrowing
+    if (typeof weight ===  "number") 
+        return weight * 2.2;
+    else 
+        return parseInt(weight) * 2.2;
+}
+
+kgToLbs(20);
+kgToLbs('20kg');
