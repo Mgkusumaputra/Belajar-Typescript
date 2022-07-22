@@ -51,3 +51,19 @@ function calculateTax(income: number, taxYear = 2022): number {         /* Alway
 }
 
 calculateTax(10_000);
+
+
+
+// Objects
+
+let employee: {
+    readonly id: number,
+    name: string,
+    retire: (date: Date) => void
+} = { 
+    id: 1, 
+    name: "Mosh",
+    retire: (date: Date) => {
+        console.log(date);
+    }
+};            // Cannot define name with null or undefined. Set it to optional or use empty string
